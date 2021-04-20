@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Cloud App</title>
+<title>Registration Details</title>
 </head>
 <body>
-Cloud App
+<a href="RegistrationServlet"><button>View Students</button></a>
 </body>
 </html>
