@@ -13,22 +13,23 @@ import com.cloudapp.vo.Student;
 @Controller
 @RequestMapping("/student")
 public class StudentController {
-	@Value("#{countryOptions}") 
-    private Map<String, String> countryOptions;
-	@RequestMapping("/showForm")
-	public String showForm(Model model) {
-		// create a student object
-		Student theStudent=new Student();
-		// add student object to the model
-		model.addAttribute("student",theStudent);
-		 // add the country options to the model 
-		model.addAttribute("theCountryOptions", countryOptions); 
-		return "student-form";
-	}
-	@RequestMapping("/processForm")
-	public String processForm(@ModelAttribute("student") Student theStudent) {
-		// log the input data
-		System.out.println("theStudent: "+theStudent.getFirstName()+" "+theStudent.getLastName());
-		return "student-confirmation";
-	}
+
+ 
+
+    @RequestMapping("/showForm")
+    public String showForm(Model model) {
+        // create a student object
+        Student theStudent=new Student();
+        // add student object to the model
+        model.addAttribute("student",theStudent);
+         // add the country options to the model 
+    
+        return "student-form";
+    }
+    @RequestMapping("/processForm")
+    public String processForm(@ModelAttribute("student") Student theStudent) {
+        // log the input data
+        System.out.println("theStudent: "+theStudent.getFirstName()+" "+theStudent.getLastName());
+        return "student-confirmation";
+    }
 }

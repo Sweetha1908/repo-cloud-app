@@ -17,9 +17,12 @@ Country:
 <form:select path="country"> 
  <form:options items="${theCountryOptions}" />
 </form:select>
-<br><br>
-Favorite Language:
-<form:radiobuttons path="favoriteLanguage" items="${student.favoriteLanguageOptions}"  />
+<br><br>    
+ Favorite Language:      
+ Java <form:radiobutton path="favoriteLanguage" value="Java" />
+ C# <form:radiobutton path="favoriteLanguage" value="C#" />
+ PHP <form:radiobutton path="favoriteLanguage" value="PHP" />
+ Ruby <form:radiobutton path="favoriteLanguage" value="Ruby" />
 <br><br>
 Operating Systems:
 Linux<form:checkbox path="operatingSystems" value="Linux"/>
