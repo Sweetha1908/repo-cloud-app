@@ -1,6 +1,5 @@
-<%@ taglib prefix="c" 
-       uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 
 <html>
@@ -19,14 +18,14 @@ Country: ${student.country}
 
 <br><br>
 
-Favorite Language: ${student.favoriteLanguage}
+Favorite Language: ${student.favouriteLanguage}
 
 <br><br>
 
 Operating Systems:
 
 <ul>
-	<c:forEach var="temp" items="${student.operatingSystems}">
+	<c:forEach var="temp" items="${student.operatingSystem}">
 
 		<li> ${temp} </li>
 
