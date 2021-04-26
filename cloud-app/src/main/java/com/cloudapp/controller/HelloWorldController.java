@@ -62,7 +62,5 @@ public class HelloWorldController {
 			model.addAttribute("message", result);
 					
 			return "helloworld";
-		}
-		
-		
+		}	
 	}
