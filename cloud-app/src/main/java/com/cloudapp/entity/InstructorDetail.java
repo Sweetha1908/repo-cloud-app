@@ -49,7 +49,6 @@ public class InstructorDetail {
 
 	// create constructors
 	public InstructorDetail() {
-
 	}
 
 	public InstructorDetail(String Address, String hobby) {

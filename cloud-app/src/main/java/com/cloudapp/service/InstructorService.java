@@ -3,7 +3,7 @@ package com.cloudapp.service;
 /*
  * An interface of InstructorService to define methods
  */
-public interface InstructorService {
+public interface InstructorService  {
 
 	// defining methods
 	void saveInstructor();

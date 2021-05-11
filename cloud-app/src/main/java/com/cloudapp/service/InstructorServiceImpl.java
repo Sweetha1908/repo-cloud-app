@@ -34,7 +34,7 @@ public class InstructorServiceImpl implements InstructorService {
 	}
 
 	@Override
-	public void saveInstructorDetails() {
+	public void saveInstructorDetails()  {
 		instructorDAO.saveInstructorDetails();
 	}
 

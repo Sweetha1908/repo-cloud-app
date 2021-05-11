@@ -284,6 +284,7 @@ public class InstructorDAOImpl implements InstructorDAO {
 		} finally {
 
 			// add clean up code
+			
 			session.close();
 
 			sessionFactory.close();

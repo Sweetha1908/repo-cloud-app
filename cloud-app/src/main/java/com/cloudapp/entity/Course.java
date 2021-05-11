@@ -71,7 +71,7 @@ public class Course {
 	// define tostring
 	@Override
 	public String toString() {
-		return "Course [id=" + id + ", title=" + title + "]";
+		return "Course  [id=" + id + ", title=" + title + "]";
 	}
 	
 	

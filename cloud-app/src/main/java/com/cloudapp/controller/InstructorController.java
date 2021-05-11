@@ -49,7 +49,7 @@ public class InstructorController {
 	}
 	
 	@RequestMapping("/deleteInstructor/{instructoDetailsId}")
-	public String deleteInstructorDetails(@PathVariable("instructoDetailsId")int instructoDetailsId) {
+	public String deleteInstructorDetails(@PathVariable("instructoDetailsId")int instructoDetailsId)  {
 		instructorService.deleteInstructorDetails(instructoDetailsId);
 		return "success";
 	} 
